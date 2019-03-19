@@ -1,0 +1,108 @@
+body{
+  font-family: sans-serif;
+}
+h1{
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+nav {
+  border: 1px solid #ccc;
+  border-width: 1px 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  
+}
+nav ul{
+  display: inline;
+}
+nav a{
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 2px solid red;
+  color: black;
+  padding: 10px;
+}
+nav:hover{
+  color: red;
+}
+#search {
+  overflow: hidden;
+  display: inline-block;
+  padding: 6px;
+  border: none;
+  margn-top: 8px;
+  margin-right: 16px;
+  
+}
+#search-input{
+  border: 0.9px solid #ccc;
+  color:black;
+  height: 35px;
+  width: 200px;
+  border-radius: 9px;
+  text-align: left 1px;
+  font-family: sans-serif;
+  font-size: 18px;
+}
+#search-button{
+  border: 10px solid #ccc;
+  background-color: #ccc;
+  font-size: 14px;
+  color: black;
+  border-radius: 9px;
+  cursor: pointer;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+.responsive-image {
+  max-width: 100%;
+}
+.cell img {
+  display: block;
+}
+@media screen and (min-width: 600px) {
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .cell {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .cell {
+    width: calc(100% / 3);
+  }
+}
+.cell {
+  margin: 1rem;
+}
+@media screen and (min-width: 600px) {
+  .cell {
+    width: calc(50% - 2rem);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .cell {
+    width: calc(33.3333% - 2rem);
+  }
+}
+footer {
+  text-align: center;
+  font-family: arial;
+  text-transform: uppercase;
+  text-style: bold;
+  font-size: 16px;
+}
+.author {
+  text-align: center;
+  text-transform: lowercase;
+}
